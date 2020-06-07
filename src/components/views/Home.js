@@ -3,21 +3,22 @@ import axios from 'axios';
 import Navbar from '../Navbar';
 import Footer from '../Footer';
 import Card from '../Card';
-import daniel from '../../daniel.json';
+// import daniel from '../../daniel.json';
 
 
 export default function Home() {
   const [search, setSearch] = useState('');
   const [data, setData] = useState([]);
-  // const baseUrl = 'https://api.github.com/search/users\?q\=';
+  const repoBaseUrl = 'https://api.github.com/search/repositories?q=';
+  const userBaseUrl = 'https://api.github.com/search/users?q=';
   console.log(data);
 
   useEffect(() => {
-    setData([daniel]);
-    // axios
-    //   .get(baseUrl + search)
-    //   .then((data) => setData(data.data.items))
-    //   .catch((err) => console.log(err));
+    // setData(daniel);
+    axios
+      .get(userBaseUrl + search)
+      .then((data) => setData(data.data.items))
+      .catch((err) => console.log(err));
   }, [search, setSearch]);
 
   const updateSearch = (e) => {
@@ -36,7 +37,9 @@ export default function Home() {
           onChange={updateSearch}
         />
       </div>
-      {data.map((user) => <Card key={user.id} user={user} />)}
+      <div className="grid">
+        {data.map((user) => <Card key={user.id} user={user} />)}
+      </div>
       <Footer />
     </div>
   );

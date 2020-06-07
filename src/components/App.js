@@ -9,7 +9,7 @@ function App() {
     <Router>
       <Switch>
         <Route exact path="/" component={Home} />
-        <Route exact path="/:id" component={Details} />
+        <Route exact path="/:owner/:repo" component={Details} />
       </Switch>
     </Router>
   );

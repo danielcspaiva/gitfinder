@@ -1,16 +1,22 @@
-import React from 'react';
-
+import React from "react";
+import { Link } from "react-router-dom";
 
 export default function Card({ user }) {
   return (
     <div className="user-card">
-      <img src={user.avatar_url} alt="profile" />
-      <div className="user-info">
-        <p>{user.login}</p>
-        <p>{user.followers_url}</p>
-        <p>{user.repos_url}</p>
-        <p></p>
-      </div>
+      <Link to={`/${user.login}`}>
+        <div>
+          <img src={user.avatar_url} alt="profile" />
+          <p>{user.login}</p>
+        </div>
+        <div className="user-info">
+          {/* <p>Name: {repo.name}</p>
+          <p>Description: {repo.description}</p>
+          <p>Stars: {repo.stargazers_count}</p>
+          <p>Language: {repo.language}</p>
+          <p>Forks: {repo.forks}</p> */}
+        </div>
+      </Link>
     </div>
   );
 }

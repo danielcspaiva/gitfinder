@@ -3,6 +3,7 @@
   height: auto;
   min-height: 100vh;
   overflow: scroll;
+  // background-color: $ligth-blue;
   background-color: rgb(250, 250, 250);
   display: flex;
   flex-direction: column;
@@ -15,7 +16,7 @@
     align-items: center;
 
     input {
-      margin: 3rem;
+      margin: 2rem;
       width: 80%;
       max-width: 500px;
       background: none;
@@ -28,10 +29,24 @@
       background: white;
       box-shadow: $box-shadow;
       padding: 1rem 2rem;
+
+      &::placeholder {
+        color: $purple
+      }
+      // &:focus{
+        // padding: 1rem;
+      // }
     }
 
     input:focus {
       outline: none;
     }
+  }
+
+  .grid {
+    width: 100vw;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
   }
 }
