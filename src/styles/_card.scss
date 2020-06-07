@@ -1,16 +1,25 @@
 .user-card {
   display: flex;
+  justify-content: space-around;
   color: $purple;
   border-radius: 1rem;
   background: white;
   box-shadow: $box-shadow;
   padding: 1rem 2rem;
-  width: 90%;
-  max-width: 700px;
+  width: 400px;
+  // max-width: 500px;
   margin: 1rem;
 
   img {
     height: 100px;
     width: 100px;
+  }
+
+  .user-info {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-size: 1.2rem;
   }
 }

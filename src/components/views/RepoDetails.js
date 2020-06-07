@@ -1,26 +1,26 @@
 import React, { useState, useEffect } from 'react';
+import axios from 'axios';
 import Navbar from '../Navbar';
 import Footer from '../Footer';
-import axios from 'axios';
 
-
-export default function Details({ match }) {
-  const user = match.params.user;
+export default function RepoDetails({ match }) {
   const [data, setData] = useState([]);
-  const baseUrl = `https://api.github.com/users/${user}/repos`;
-  console.log(data);
+  const { user } = match.params;
+  const { repo } = match.params;
+  const baseUrl = `https://api.github.com/repos/${user}/${repo}`;
 
   useEffect(() => {
     axios
       .get(baseUrl)
-      .then((data) => setData(data))
+      .then((data) => setData(data.data))
       .catch((err) => console.log(err));
-  }, [baseUrl]);
-
+  }, []);
   return (
     <div className="details">
       <Navbar />
-      <h1>Hello Details</h1>
+      <div>
+        <h1>{data.name}</h1>
+      </div>
       <Footer />
     </div>
   );

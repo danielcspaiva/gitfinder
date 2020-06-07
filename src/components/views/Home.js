@@ -2,14 +2,14 @@ import React, { useState, useEffect } from 'react';
 import axios from 'axios';
 import Navbar from '../Navbar';
 import Footer from '../Footer';
-import Card from '../Card';
+import UserCard from '../UserCard';
 // import daniel from '../../daniel.json';
 
 
 export default function Home() {
   const [search, setSearch] = useState('');
   const [data, setData] = useState([]);
-  const repoBaseUrl = 'https://api.github.com/search/repositories?q=';
+  // const repoBaseUrl = 'https://api.github.com/search/repositories?q=';
   const userBaseUrl = 'https://api.github.com/search/users?q=';
   console.log(data);
 
@@ -38,7 +38,7 @@ export default function Home() {
         />
       </div>
       <div className="grid">
-        {data.map((user) => <Card key={user.id} user={user} />)}
+        {data.map((user) => <UserCard key={user.id} user={user} />)}
       </div>
       <Footer />
     </div>
