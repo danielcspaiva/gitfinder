@@ -3,10 +3,11 @@ nav {
   display: flex;
   align-items: center;
   justify-content: center;
-  height: 5vh;
+  height: 8vh;
   width: 100vw;
   background-color: white;
   box-shadow: $box-shadow;
+  font-size: 1.4rem;
 
   * {
     margin: 0 0.2rem;
