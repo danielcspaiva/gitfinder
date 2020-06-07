@@ -1,23 +1,23 @@
 import React, { useState, useEffect } from 'react';
+import axios from 'axios';
 import Navbar from '../Navbar';
 import Footer from '../Footer';
-import SearchBar from '../SearchBar';
-import axios from "axios";
+import Card from '../Card';
+import daniel from '../../daniel.json';
 
 
 export default function Home() {
   const [search, setSearch] = useState('');
-  const [data, setData] = useState('');
-  // eslint-disable-next-line no-useless-escape
-  const baseUrl = 'https://api.github.com/search/users\?q\=';
-
+  const [data, setData] = useState([]);
+  // const baseUrl = 'https://api.github.com/search/users\?q\=';
+  console.log(data);
 
   useEffect(() => {
-    console.log(baseUrl + search)
-    axios
-      .get(baseUrl + search)
-      .then((data) => console.log(data.data.items))
-      .catch((err) => console.log(err));
+    setData([daniel]);
+    // axios
+    //   .get(baseUrl + search)
+    //   .then((data) => setData(data.data.items))
+    //   .catch((err) => console.log(err));
   }, [search, setSearch]);
 
   const updateSearch = (e) => {
@@ -26,9 +26,17 @@ export default function Home() {
 
   return (
     <div className="home">
-      <Navbar />
-      <SearchBar search={search} updateSearch={updateSearch} />
-      <h1>Home</h1>
+      <div className="header">
+        <Navbar />
+        <input
+          type="text"
+          name="search"
+          value={search}
+          placeholder="Search"
+          onChange={updateSearch}
+        />
+      </div>
+      {data.map((user) => <Card key={user.id} user={user} />)}
       <Footer />
     </div>
   );
