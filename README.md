@@ -4,14 +4,17 @@
 </p>
 
 <p align="center">
- <a href="https://teste-dasa-daniel.now.sh/">Acesse!</a>
+ <a href="https://teste-dasa-daniel.now.sh/">Access it here!</a>
 </p>
 
 ## Getting Started
 This project is a GiHub finder for users and repositories.
 
 ## Instructions
-On the main screen, choose wether you want to search for users or repositories. Start typing what you are searching for and see the results. You can click on a user card to see his repositories. You can also click on links to see the repositories directly on GitHub.
+* On the main screen, choose wether you want to search for users or repositories.
+* Start typing what you are searching for and see the results.
+* You can click on a user card to see his repositories.
+* You can also click on links to see the repositories directly on GitHub.
 
 ### Built With:
 
