@@ -30,7 +30,7 @@ export default function RepoDetails({ match }) {
           <div className="repo-info">
             <h1>{data.name}</h1>
             <p>{data.owner.login}</p>
-            <p>Check it on GitHub{data.url}</p>
+            <a href={data.html_url}>Checkit on GitHub</a>
           </div>
         ) : (
           <div className="loading-container">

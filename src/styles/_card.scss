@@ -1,6 +1,6 @@
 .card-container {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   color: $purple;
   border-radius: 1rem;
   background: white;
@@ -9,6 +9,7 @@
   width: 400px;
   margin: 0 1rem;
   margin: .8rem;
+  word-break: break-all;
 
   &:hover {
     box-shadow: $box-shadow-hover;
@@ -33,6 +34,11 @@
 
   animation: showUp 0.5s ease-in-out forwards;
 
+  .img-container {
+    display: flex;
+    align-items: center;
+  }
+
   .card-info {
     display: flex;
     justify-content: flex-start;
@@ -40,7 +46,7 @@
     text-align: center;
     font-size: 1.2rem;
     width: 100%;
-    margin-left: 2rem;
+    margin: 1rem;
 
     .column {
       display: flex;
@@ -48,14 +54,32 @@
       justify-content: space-around;
       text-align: left;
 
+      a {
+        font-size: 0.8rem;
+        font-weight: 500;
+      }
+
       h2 {
-        font-size: 1rem;
+        font-size: 1.1rem;
         font-weight: bold;
       }
 
       p {
         font-size: 0.8rem;
         font-weight: 500;
+        margin: 0.5rem 0;
+      }
+
+      .repo-data {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        overflow: scroll;
+
+        svg {
+          margin: 0 .5rem;
+        }
       }
     }
   }
