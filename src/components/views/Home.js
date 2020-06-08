@@ -33,7 +33,7 @@ export default function Home() {
         .catch((err) => console.log(err));
     }, 500);
     return () => cancel("no longer latest query") || clearTimeout(timeOutId);
-  }, [search, searchKind]);
+  }, [search, searchKind, searchUrl]);
 
   const handleSearchKind = (kind) => {
     setData([]);
