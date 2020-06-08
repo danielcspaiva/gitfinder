@@ -69,6 +69,7 @@ export default function Home() {
           value={search}
           placeholder="Search"
           onChange={updateSearch}
+          autoComplete="off"
         />
       </div>
       <div className="grid">
