@@ -20,9 +20,10 @@ This project is a GiHub finder for users and repositories.
 
 * [React](https://reactjs.org/) - A JavaScript library for building user interfaces.
 * [Jest](https://jestjs.io/) - Jest is a delightful JavaScript Testing Framework with a focus on simplicity.
+* [Sass](https://sass-lang.com/) - Sass is a preprocessor scripting language that is interpreted or compiled into Cascading Style Sheets (CSS).
 * [GitHub API](https://developer.github.com/v3/) - API used to fetch the data.
 * [Axios](https://github.com/axios/axios) - Promise based HTTP client for the browser and Node.js.
-* [Vercel](https://vercel.com/) - Cloud platform where the project client is deployed.
+* [Vercel](https://vercel.com/) - Cloud platform where the project is deployed.
 
 ### Installation
 
@@ -43,3 +44,7 @@ yarn start || npm start
 yarn test || npm run test
 ```
 5. Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+
+---
+
+Built by Daniel Paiva
