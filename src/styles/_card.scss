@@ -1,15 +1,18 @@
-.user-card {
+.card-container {
   display: flex;
   justify-content: space-between;
   color: $purple;
   border-radius: 1rem;
   background: white;
   box-shadow: $box-shadow;
-  padding: 1rem 2rem;
+  padding: 1rem 1.4rem;
   width: 400px;
-  // max-width: 500px;
   margin: 0 1rem;
   margin-bottom: 1.5rem;
+
+  &:hover {
+    box-shadow: $box-shadow-hover;
+  }
 
   @media (max-width: 750px) {
     width: 85vw;
@@ -18,13 +21,44 @@
   img {
     height: 50px;
     width: 50px;
+    border-radius: 1rem;
   }
 
-  .user-info {
+  a {
+    width: 100%;
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .card-info {
+    display: flex;
+    justify-content: flex-start;
     align-items: center;
     text-align: center;
     font-size: 1.2rem;
+    width: 100%;
+    margin-left: 2rem;
+
+    .column {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-around;
+      text-align: left;
+
+      h2 {
+        font-size: 1rem;
+        font-weight: bold;
+      }
+
+      p {
+        font-size: 0.8rem;
+        font-weight: 500;
+      }
+    }
   }
+}
+
+.repo-card {
+  height: 400px;
 }

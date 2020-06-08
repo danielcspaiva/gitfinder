@@ -3,15 +3,15 @@ import { Link } from "react-router-dom";
 
 export default function UserCard({ user }) {
   return (
-    <Link to={`/${user.login}`}>
-      <div className="user-card">
+    <div className="card-container">
+      <Link to={`/${user.login}`}>
         <div>
           <img src={user.avatar_url} alt="profile" />
         </div>
-        <div className="user-info">
+        <div className="card-info">
           <p>{user.login}</p>
         </div>
-      </div>
-    </Link>
+      </Link>
+    </div>
   );
 }

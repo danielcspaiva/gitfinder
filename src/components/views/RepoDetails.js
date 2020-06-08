@@ -14,7 +14,7 @@ export default function RepoDetails({ match }) {
       .get(baseUrl)
       .then((data) => setData(data.data))
       .catch((err) => console.log(err));
-  }, []);
+  }, [baseUrl]);
   return (
     <div className="details">
       <Navbar />

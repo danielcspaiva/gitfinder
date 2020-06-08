@@ -14,9 +14,9 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    font-size: 1.3rem;
 
     input {
-      margin: 1.5rem;
       width: 80%;
       max-width: 500px;
       background: none;
@@ -29,17 +29,19 @@
       background: white;
       box-shadow: $box-shadow;
       padding: 1rem 2rem;
+      font-weight: bold;
+      margin-bottom: 2rem;
+
+      &:hover {
+        box-shadow: $box-shadow-hover;
+      }
 
       &::placeholder {
         color: $purple
       }
-      // &:focus{
-        // padding: 1rem;
-      // }
-    }
-
-    input:focus {
-      outline: none;
+      &:focus {
+        outline: none;
+      }
     }
   }
 
@@ -48,5 +50,39 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+  }
+
+  .btn-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    color: $purple;
+    padding: 1rem;
+
+    .active {
+      background-color: $purple;
+      color: white;
+    }
+
+    button {
+      font-size: 1.1rem;
+      color: $purple;
+      border-radius: 50px;
+      background: white;
+      box-shadow: $box-shadow;
+      padding: .6rem 1.2rem;
+      border: none;
+      margin: .6rem;
+      font-weight: bold;
+
+      &:hover {
+        box-shadow: $box-shadow-hover;
+      }
+
+
+      &:focus {
+        outline: none;
+      }
+    }
   }
 }

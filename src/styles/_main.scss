@@ -1,6 +1,10 @@
 html {
-  background-color: $light-blue;
+  // background-color: $light-blue;
   font-family: $main-font;
+  font-weight: bold;
 }
 
-
+a {
+  text-decoration: none;
+  color: $purple;
+}

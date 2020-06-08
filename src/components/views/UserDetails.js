@@ -15,7 +15,7 @@ export default function Details({ match }) {
       .get(baseUrl)
       .then((data) => setData(data.data))
       .catch((err) => console.log(err));
-  }, []);
+  }, [baseUrl]);
 
   return (
     <div className="details">

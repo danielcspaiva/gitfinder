@@ -1,13 +1,14 @@
-import React from 'react';
-import { FiGithub } from 'react-icons/fi';
+import React from "react";
+import { FiGithub } from "react-icons/fi";
+import { Link } from "react-router-dom";
 
 export default function Navbar() {
   return (
-    <nav>
-      <h1>Repository Finder </h1>
-      <a href="https://github.com/" target="_blank" rel="noopener noreferrer">
+    <Link to="/">
+      <nav>
+        <h1>GitFinder</h1>
         <FiGithub size={25} color="#3D2992" />
-      </a>
-    </nav>
+      </nav>
+    </Link>
   );
 }
