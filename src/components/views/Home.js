@@ -14,7 +14,6 @@ export default function Home() {
   const userBaseUrl = "https://api.github.com/search/users?q=";
   const [searchUrl, setSearchUrl] = useState(userBaseUrl);
   const [loading, setLoading] = useState(false);
-  // console.log(data);
 
   useEffect(() => {
     const { cancel } = axios.CancelToken.source();

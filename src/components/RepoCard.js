@@ -20,7 +20,7 @@ export default function RepoCard({ repo }) {
                 <GoRepoForked size={10} color="#3D2992" />
                 <p>{repo.forks}</p>
               </div>
-              <a href={repo.html_url}>Check it on GitHub</a>
+              <a href={repo.html_url} target="_blank" rel="noopener noreferrer">Check it on GitHub</a>
             </div>
           </div>
         </div>
