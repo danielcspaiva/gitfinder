@@ -8,7 +8,7 @@
   padding: 1rem 1.4rem;
   width: 400px;
   margin: 0 1rem;
-  margin-bottom: 1.5rem;
+  margin: .8rem;
 
   &:hover {
     box-shadow: $box-shadow-hover;
@@ -30,6 +30,8 @@
     justify-content: space-between;
     align-items: center;
   }
+
+  animation: showUp 0.5s ease-in-out forwards;
 
   .card-info {
     display: flex;

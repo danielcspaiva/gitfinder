@@ -8,3 +8,12 @@ a {
   text-decoration: none;
   color: $purple;
 }
+
+.loading-container {
+  padding: 4rem;
+}
+
+.translateY {
+  transform: translateY(0) !important;
+  transition: transform 0.3s ease-in-out;
+}
