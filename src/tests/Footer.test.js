@@ -9,8 +9,8 @@ describe("Footer", () => {
     expect(wrapper.exists('footer')).toBe(true);
   });
 
-  it("Should have a h1 with the text: Desenvolvido por Daniel Paiva", () => {
-    expect(wrapper.find("h1").text()).toContain("Desenvolvido por Daniel Paiva");
+  it("Should have a h1 with the text: Developed by Daniel Paiva", () => {
+    expect(wrapper.find("h1").text()).toContain("Developed by Daniel Paiva");
   });
 
   it("Should have two links to social media", () => {
