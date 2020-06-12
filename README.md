@@ -4,7 +4,7 @@
 </p>
 
 <p align="center">
- <a href="https://teste-dasa-daniel.now.sh/">Access it here!</a>
+ <a href="https://gitfinder.danielcspaiva.now.sh/">Access it here!</a>
 </p>
 
 ## Getting Started
