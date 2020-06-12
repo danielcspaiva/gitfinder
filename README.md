@@ -29,7 +29,7 @@ This project is a GiHub finder for users and repositories.
 
 1. Clone the repository.
 ```sh
-git clone https://github.com/danielcspaiva/teste-dasa.git
+git clone https://github.com/danielcspaiva/gitfinder.git
 ```
 2. Install packages.
 ```sh
