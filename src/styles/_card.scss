@@ -43,10 +43,14 @@
     display: flex;
     justify-content: flex-start;
     align-items: center;
-    text-align: center;
+    text-align: right;
     font-size: 1.2rem;
     width: 100%;
     margin: 1rem;
+
+    p {
+      text-align: right;
+    }
 
     .column {
       display: flex;
